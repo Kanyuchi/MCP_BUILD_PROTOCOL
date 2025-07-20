@@ -1,0 +1,41 @@
+{
+  "mcpServers": {
+    "perplexity-ask": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "server-perplexity-ask"
+      ],
+      "env": {
+        "PERPLEXITY_API_KEY": "your_perplexity_api_key_here"
+      }
+    },
+    "octagon-deep-research-mcp": {
+      "command": "npx",
+      "args": ["-y", "octagon-deep-research-mcp@latest"],
+      "env": {
+        "OCTAGON_API_KEY": "your_octagon_api_key_here"
+      }
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "pdf-analysis": {
+      "command": "./venv/Scripts/python.exe",
+      "args": ["-u", "test_fastmcp_server.py"],
+      "cwd": "./pdf_analysis_mcp",
+      "env": {
+        "PYTHONUNBUFFERED": "1",
+        "PYTHONPATH": "./pdf_analysis_mcp",
+        "PYTHONIOENCODING": "utf-8",
+        "MCP_SERVER_ROOT": "./pdf_analysis_mcp",
+        "VIRTUAL_ENV": "./pdf_analysis_mcp/venv",
+        "PATH": "./pdf_analysis_mcp/venv/Scripts;%PATH%"
+      }
+    }
+  }
+} 
