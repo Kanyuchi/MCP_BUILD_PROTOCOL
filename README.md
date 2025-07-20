@@ -1,4 +1,4 @@
-# MCP Build Protocol
+# mcp-research-toolkit
 
 Copyright (c) 2024 Kanyuchi. All rights reserved.
 Licensed under the MIT License. See LICENSE file for details.
