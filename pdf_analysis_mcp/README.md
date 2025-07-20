@@ -14,10 +14,28 @@ A Model Context Protocol (MCP) server for analyzing PDF documents, extracting cl
 
 ## Architecture
 
-- **PDF Processing Pipeline**: PyMuPDF/PDFPlumber for text extraction
-- **Claim Extraction Engine**: NLP + LLM for identifying author claims
-- **Relationship Mapper**: Semantic embeddings + graph construction
-- **MCP Server**: Python-based with tool definitions for external integration
+```mermaid
+graph TD
+    A[PDF Analysis MCP Server] --> B[Core Components]
+    A --> C[Tools]
+    A --> D[Data Storage]
+    
+    B --> B1[PDF Processor]
+    B --> B2[Claim Extractor]
+    B --> B3[Relationship Mapper]
+    B --> B4[Database Manager]
+    
+    C --> C1["analyze_pdf<br/>Extract data from single PDF"]
+    C --> C2["analyze_directory<br/>Batch process PDFs"]
+    C --> C3["find_relationships<br/>Map connections"]
+    C --> C4["search_claims<br/>Query extracted claims"]
+    C --> C5["generate_summary<br/>Create lit reviews"]
+    C --> C6["export_data<br/>Export findings"]
+    
+    D --> D1[Local PDF Storage]
+    D --> D2[Claims Database]
+    D --> D3[Relationship Graph]
+```
 
 ## Installation
 

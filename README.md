@@ -9,6 +9,36 @@ A comprehensive toolkit for building and managing Model Context Protocol (MCP) s
 - **Thesis Writing Tools**: Specialized tools for academic research and writing
 - **Multiple MCP Server Types**: Support for various MCP servers including Perplexity, Octagon, and Sequential Thinking
 
+## 🏗️ Architecture
+
+```mermaid
+graph TD
+    A[Claude Desktop/Cursor IDE] --> B[MCP Host]
+    B --> C{MCP Servers}
+    
+    C --> D[PDF Analysis MCP]
+    C --> E[Claude Memory MCP]
+    C --> F[File Server MCP]
+    C --> G[Perplexity Ask MCP]
+    C --> H[Octagon Research MCP]
+    C --> I[Sequential Thinking MCP]
+    C --> J[Task Master MCP]
+    
+    D --> D1["PDF Processing Tools<br/>- analyze_pdf<br/>- analyze_directory<br/>- find_relationships<br/>- search_claims<br/>- generate_summary<br/>- export_data"]
+    
+    E --> E1["Memory Tools<br/>- store_memory<br/>- retrieve_memory<br/>- list_memories<br/>- delete_memory<br/>- memory_stats"]
+    
+    F --> F1["File Tools<br/>- read_file<br/>- write_file<br/>- list_directory<br/>- get_file_info"]
+    
+    G --> G1["Research Tools<br/>- perplexity_ask"]
+    
+    H --> H1["Deep Research Tools<br/>- octagon_research"]
+    
+    I --> I1["Thinking Tools<br/>- sequential_analysis"]
+    
+    J --> J1["Task Tools<br/>- task_management<br/>- task_tracking"]
+```
+
 ## 📋 Prerequisites
 
 - Python 3.8+

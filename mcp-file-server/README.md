@@ -1,6 +1,28 @@
 # MCP File Server
 
-A Model Context Protocol (MCP) server that provides local file system access capabilities.
+A secure and efficient file system access server implementing the Model Context Protocol (MCP). This server provides controlled access to local files and directories through a standardized interface.
+
+## Architecture
+
+```mermaid
+graph TD
+    A[File Server MCP] --> B[Core Features]
+    A --> C[Security]
+    A --> D[Tools]
+    
+    B --> B1[File Operations]
+    B --> B2[Directory Management]
+    B --> B3[Metadata Handling]
+    
+    C --> C1[Path Validation]
+    C --> C2[Access Control]
+    C --> C3[Safe Operations]
+    
+    D --> D1["read_file<br/>Read file contents"]
+    D --> D2["write_file<br/>Write to files"]
+    D --> D3["list_directory<br/>List contents"]
+    D --> D4["get_file_info<br/>Get metadata"]
+```
 
 ## Features
 
