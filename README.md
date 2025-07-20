@@ -1,6 +1,18 @@
 # MCP Build Protocol
 
+Copyright (c) 2024 Kanyuchi. All rights reserved.
+Licensed under the MIT License. See LICENSE file for details.
+
 A comprehensive toolkit for building and managing Model Context Protocol (MCP) servers, with specific focus on PDF analysis and thesis writing assistance.
+
+## Component Ownership
+
+This project includes several MCP components with different ownership:
+
+- **PDF Analysis MCP** (Custom Component): Copyright (c) 2024 Kanyuchi
+- **Claude Memory MCP** (Custom Component): Copyright (c) 2024 Kanyuchi
+- **File Server MCP**: Based on standard MCP implementations
+- **Other MCPs**: Third-party implementations (Perplexity, Octagon, etc.)
 
 ## 🌟 Features
 

@@ -1,5 +1,8 @@
 # PDF Analysis MCP Server
 
+Copyright (c) 2024 Kanyuchi. All rights reserved.
+This component is part of the MCP Build Protocol project and is licensed under the MIT License.
+
 A Model Context Protocol (MCP) server for analyzing PDF documents, extracting claims, and mapping relationships between authors' arguments across disciplines. Designed for thesis writing and literature review workflows.
 
 ## Features
